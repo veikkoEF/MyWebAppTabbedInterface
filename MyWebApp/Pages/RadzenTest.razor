@@ -1,0 +1,60 @@
+﻿@page "/radzenTest"
+<h3>Dozenten</h3>
+
+<div class="row">
+    <div class="col-7">
+        <RadzenTabs style="height: 880px" RenderMode="TabRenderMode.Client">
+            <Tabs>
+                <RadzenTabsItem Text="Stammdaten">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="row" style="margin-top:10px">
+                                    <div class="col-md-12">
+                                        <label for="salutation">Wählen Sie eine Anrede:</label>
+                                        <select name="salutation" class="form-control" id="salutation">
+                                            <option value="Frau">Frau</option>
+                                            <option value="Herr">Herr</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:10px">
+                                    <div class="col-md-12">
+                                        <label for="firstName">Vorname</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Vorname hier eingeben" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:10px">
+                                    <div class="col-md-12">
+                                        <label for="lastName">Nachname</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Nachname hier eingeben.." />
+                                    </div>
+                                </div>
+
+
+                                <div class="row" style="margin-top:10px">
+                                    <div class="col-md-12">
+                                        <label for="email">E-Mail-Adresse</label>
+                                        <input type="text" class="form-control" id="email" placeholder="Die E-Mail-Adresse bitte..." />
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <RadzenImage Path="img.png" Style="width:250px"> </RadzenImage>
+                            </div>
+                        </div>
+                        </div>
+                </RadzenTabsItem>
+                <RadzenTabsItem Text="Akademisch"> </RadzenTabsItem>
+                <RadzenTabsItem Text="Vertrag">  </RadzenTabsItem>
+            </Tabs>
+        </RadzenTabs>
+    </div>
+</div>
+
+
+@code {
+
+  
+}
